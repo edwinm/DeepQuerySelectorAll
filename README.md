@@ -30,10 +30,10 @@ npm install --save-dev deep-query-selector-all
 
 #### Parameters
 
-| Name    | Type                   | Description                                     |
-|---------|------------------------|-------------------------------------------------|
-| query   | string                 | Query to use, similar to `deepQuerySelectorAll` |
-| rootElement | Element (optional)     | Root element to query, `document` by default    |
+| Name    | Type                   | Description                                  |
+|---------|------------------------|----------------------------------------------|
+| query   | string                 | Query to use, similar to `querySelectorAll`  |
+| rootElement | Element (optional)     | Root element to query, `document` by default |
 
 ## Example
 
