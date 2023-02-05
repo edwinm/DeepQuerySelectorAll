@@ -1,0 +1,42 @@
+{
+  "name": "deep-query-selector-all",
+  "version": "1.0.0",
+  "description": "Use QuerySelectorAll and also find elements inside web components and slots",
+  "main": "dist/dqsa.js",
+  "module": "dist/dqsa.js",
+  "types": "dist/dqsa.d.ts",
+  "scripts": {
+    "start": "tsc",
+    "build": "tsc",
+    "watch": "tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edwinm/deep-query-selector-all.git"
+  },
+  "files": [
+    "src/dqsa.ts",
+    "dist/dqsa.js",
+    "dist/dqsa.d.ts",
+    "dist/dqsa.js.map"
+  ],
+  "keywords": [
+    "qsa",
+    "shadow-dom",
+    "web components",
+    "query-selector-all",
+    "typescript",
+    "front-end",
+    "lightweight",
+    "micro"
+  ],
+  "author": {
+    "name": "Edwin Martin",
+    "email": "edwin@bitstorm.org",
+    "url": "https://bitstorm.org/"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.9.5"
+  }
+}

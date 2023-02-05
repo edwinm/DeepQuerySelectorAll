@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test deepQuerySelectorAll</title>
+  <script defer src="test.js"></script>
+  <script defer src="panel-component.js"></script>
+    <style>
+        html {
+            box-sizing: border-box;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+        div[slot=body] {
+            display: flex;
+            gap: 20px;
+        }
+        code {
+            color: limegreen;
+        }
+        button {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Test deepQuerySelectorAll</h1>
+
+<p>This page is build using web components.</p>
+
+<p>Clicking the <i>Find all</i> button will find all <var >code</var> elements,
+    also the ones inside web components and inside slots.
+    They will be marked with a yellow background.
+</p>
+
+<hr>
+
+<main>
+    <p><code>[A]</code> HTML outside any webcomponent</p>
+
+    <panel-component>
+        <span slot="heading">Panel top</span>
+        <div slot="body">
+            <p><code>[B]</code> In a slot inside a webcomponent.</p>
+            <panel-component>
+                <span slot="heading">Panel sub</span>
+                <div slot="body">
+                    <p><code>[C]</code> In a slot inside a webcomponent inside a webcomponent.</p>
+                </div>
+            </panel-component>
+        </div>
+    </panel-component>
+
+    <button onclick="find()">Find all</button>
+
+    <p>Git repository: <a href="https://github.com/edwinm/deep-query-selector-all">deep-query-selector-all</a>.</p>
+
+</main>
+
+</body>
+</html>
