@@ -1,8 +1,8 @@
 # DeepQuerySelectorAll
 
-> Use QuerySelectorAll and also find elements inside web components and slots 
+> deepQuerySelectorAll is like querySelectorAll but also finds elements inside web components and slots 
 
-With the standard `querySelectorAll` function, you can't find elements inside
+With the standard `querySelector` and `querySelectorAll` function, you can't find elements inside
 web components. Those elements are hidden inside the _Shadow DOM_.
 
 With `deepQuerySelectorAll` you can find those elements.
