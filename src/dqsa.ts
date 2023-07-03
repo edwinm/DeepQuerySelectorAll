@@ -1,19 +1,21 @@
 /**
+ @version 1.1.0
  @copyright 2023 Edwin Martin
  @license MIT
  */
-export function deepQuerySelectorAll(query: string, element: ChildNode|Element|Document=document) {
+export function deepQuerySelectorAll(query: string, element: Element=document.body) {
     const result:Element[] = Array.from(
-        (<Element>element).shadowRoot
-        ? (<Element>element).shadowRoot.childNodes
+        element.shadowRoot
+        ? element.shadowRoot.childNodes
             : element.nodeName === 'SLOT'
         ? (<HTMLSlotElement>element).assignedElements()
             :element.childNodes,
     )
-        .map((e)=> deepQuerySelectorAll(query, e))
+        .filter((element: ChildNode): element is Element => element instanceof Element)
+        .map((element: Element) => deepQuerySelectorAll(query, element))
         .flat();
 
-    if((<Element>element).matches?.(query)) {
+    if ((<Element>element).matches?.(query)) {
         result.push(<Element>element)
     }
 
