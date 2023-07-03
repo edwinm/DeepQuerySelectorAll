@@ -2,7 +2,7 @@
   "name": "deep-query-selector-all",
   "version": "1.0.0",
   "description": "Use QuerySelectorAll and also find elements inside web components and slots",
-  "main": "dist/dqsa.js",
+  "browser": "dist/dqsa.js",
   "module": "dist/dqsa.js",
   "types": "dist/dqsa.d.ts",
   "scripts": {
