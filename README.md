@@ -37,6 +37,8 @@ npm install --save-dev deep-query-selector-all
 
 ## Example
 
+Find all `div`'s with classname `product`, even when inside webcomponents.
+
 ```javascript
 import {deepQuerySelectorAll} from "deep-query-selector-all";
 
@@ -45,7 +47,7 @@ const productElements = deepQuerySelectorAll("div.product");
 
 ## Demo
 
-In the repository, you can find a `test` directory with a webpage that
+In the repository, you can find a `demo` directory with a webpage that
 demonstrates the use of `deepQuerySelectorAll`.
 
 ## License
