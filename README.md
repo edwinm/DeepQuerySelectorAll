@@ -12,11 +12,11 @@ web components and elements that are inserted using _slots_.
 This can be useful when using web components from third parties and there is
 no API available to make desired changes to those web components.
 
-WARNING: Don't use this with web components you own or you can control. If you want to make a
-change or read data inside a web component, add this functionality to the web component API and use that functionality.
-If you still use `deepQuerySelectorAll` on your own web components because it's quick and easy,
-you'll lose all claims to call yourself a respectable developer.
-
+> [!WARNING]
+> Don't use this with web components you own or you can control. If you want to make a
+  change or read data inside a web component, add this functionality to the web component API and use that functionality.
+  If you still use `deepQuerySelectorAll` on your own web components because it's quick and easy,
+  you'll lose all claims to call yourself a respectable developer.
 
 ## Installation
 
